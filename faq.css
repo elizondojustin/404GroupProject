@@ -1,0 +1,76 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{background:0 0;border:0;font-size:100%;margin:0;outline:0;padding:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}body{font:14px/24px helvetica,arial,sans-serif;color:#666}a:focus{outline:1px dotted}hr{border:0;border-top-width:1px;clear:both;height:0}h1{font-size:25px;line-height:25px;font-family:myriad pro,Helvetica,Arial,sans-serif}h2{font-size:23px;line-height:23px}h3{font-size:20px;line-height:21px}h4{font-size:19px;line-height:19x}h5{font-size:17px;line-height:17px}h6{font-size:15px;line-height:15px}h1,h2,h3,h4,h5,h6{color:#000}ol{list-style:decimal}ul{list-style:disc}li{margin-left:30px}p,dl,hr,h1,h2,h3,h4,h5,h6,ol,ul,pre,table,address,fieldset{margin-bottom:20px}
+
+body{
+    background-color: whitesmoke;
+    margin: 0px 10px 2px;
+}
+h3{
+    background-color: peachpuff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px grey;
+    color: black;
+    align-items: space-evenly;
+    text-align: center;
+}
+/** This stuff is supposed to make it neat during each load **/
+/** Center our page in the middle of the window **/
+#wrapper{
+    width: 960px;
+    margin: 0 auto;
+    position: relative; /** Important later on for some reason **/
+}
+
+/** Give our primary column a width and float it to the left with a right margin **/
+#primary{
+    width:720px;
+    margin: 20px 40px 0 0;
+    float: left;
+    display: inline;
+}
+/** Position sidebar to the right of the primary content bar **/
+#sidebar{
+    left: 760px;
+    position: absolute;
+}
+/** Gives category heading a space **/
+h3{
+    padding-top: 30px;
+}
+
+/** make the links blue **/
+a{
+    color: blue;
+    text-decoration: none;
+}
+
+/** makes the link have a hover efffect to it **/
+a:hover{
+    text-decoration: underline;
+}
+
+/** styles the nav menu by adding a background and padding **/
+.section_menu{
+    background-color:gainsboro;
+    padding: 20px 10px;
+    
+}
+
+/** style the faq questions **/
+.faq{
+    margin-bottom: 30px;
+}
+
+/** Make the question itself stand out **/
+.faq dt{
+    font-weight: bold;
+    color: #000000;
+    padding: 25px 0 5px 0;
+    display: block;
+}
+
+/** adds a divisor below the answer to the question **/
+.faq dd{
+    padding-bottom: 25px;
+    border-bottom: 1px solid #cccccc;
+    display: block;
+}
